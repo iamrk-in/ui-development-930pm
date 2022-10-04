@@ -1,0 +1,23 @@
+-> what is html?
+    - html stands for hyper text markup language
+    - used to create the structure of the web page
+    - web page consists of text, images, links, lists, etc., 
+
+-> how to work with html?
+    - elements (tags)
+        1. block 
+            syntax: 
+            <elementName>
+                .....
+                .....
+            </elementName>
+            examples:
+            <h1>....</h1>, <p> ... </p>, <div> ... </div> 
+
+        2. inline
+            syntax: 
+            <elementName />
+            examples: 
+            <hr />, <input />, <img />
+
+    - attributes
