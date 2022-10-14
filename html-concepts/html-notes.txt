@@ -21,3 +21,29 @@
             <hr />, <input />, <img />
 
     - attributes
+        1. block 
+            syntax: 
+            <elementName attributeName="itsValue" attributeName>
+                .....
+                .....
+            </elementName>
+            examples:
+            <h1 style="color: red;">....</h1>, <p hidden> ... </p>, <div> ... </div> 
+            <a href=""> ... </a>
+
+        2. inline
+            syntax: 
+            <elementName attributeName="itsValue" attributeName />
+            examples: 
+            <hr />, <input type="file" />, <img src="" />
+
+-> Complete list of Meta Elements: 
+https://gist.github.com/lancejpollard/1978404
+
+-> Formatting Elements: p, i, h1 to h6, strong, img, hr, a, 
+-> Attributes: name, src, href, 
+-> Listings: order, unorder, def
+-> Tables
+-> Forms
+-> Semantic Elements: 
+    header, footer, main, nav, section, article, aside, div

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form and Its Fields</title>
+</head>
+<body>
+    <form name="personalForm" method="post" action="#">
+        <table>
+            <tr>
+                <th colspan="2">Personal Details</th>
+            </tr>
+            <tr>
+                <td>Name</td>
+                <td><input type="text" name="name" value="" /></td>
+            </tr>
+            <tr>
+                <td>Password</td>
+                <td><input type="password" name="password" value="" /></td>
+            </tr>
+            <tr>
+                <td>Email</td>
+                <td><input type="email" name="email" value="" /></td>
+            </tr>
+            <tr>
+                <td>Gender</td>
+                <td>
+                    <input type="radio" name="gender" value="male" /> male 
+                    <input type="radio" name="gender" value="female" /> female 
+                </td>
+            </tr>
+            <tr>
+                <td>Contact</td>
+                <td><input type="text" name="contact" value="" /></td>
+            </tr>
+            <tr>
+                <th colspan="2">Educational Details</th>
+            </tr>
+            <tr>
+                <td>Degree</td>
+                <td>
+                    <select name="degree">
+                        <option value=""> choose any degree </option>
+                        <option value=""> degree1 </option>
+                        <option value=""> degree2 </option>
+                        <option value=""> degree3 </option>
+                        <option value=""> degree4 </option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Engineering</td>
+                <td>
+                    <select name="engineering">
+                        <option value=""> choose any engineering </option>
+                        <option value=""> engineering1 </option>
+                        <option value=""> engineering2 </option>
+                        <option value=""> engineering3 </option>
+                        <option value=""> engineering4 </option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Hobbies</td>
+                <td>
+                    <input type="checkbox" name="hobbies[]" value="playing chess" /> playing chess 
+                    <input type="checkbox" name="hobbies[]" value="reading books" /> reading books 
+                </td>
+            </tr>
+            <tr>
+                <td>Address</td>
+                <td><textarea name="address"></textarea></td>
+            </tr>
+            <tr>
+                <td>File Upload</td>
+                <td><input type="file" name="file" /></td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <input type="submit" name="submit" value="submit" />
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

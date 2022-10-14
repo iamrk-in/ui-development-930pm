@@ -1,0 +1,32 @@
+-> What is CSS?? and its use??
+    - CSS stands for Cascading Style Sheets
+    - Used to apply the styles or create the appearance to the Html elements
+
+-> It works:
+    1. Inline 
+    2. Embedded 
+    3. External
+
+-> Color:
+    - 256 colors (red, green, blue)
+    1. name - red, cyan, yellow etc., 
+    2. numerical - 
+        rgb(0, 0, 0)
+        rgb(255, 255, 255)
+        rgb(123, 187, 213)
+
+    3. hexadecimal - 
+        #... (3 chars)
+        #.... (4 chars)
+        #...... (6 chars) 
+
+        a character can be: a - f, A - F, 0 - 9
+
+        #e5a
+        #f2de
+        #a2d5c0
+
+-> Comment: 
+    - 2 ways
+    1. single - // ......
+    2. multi - /* .... */
