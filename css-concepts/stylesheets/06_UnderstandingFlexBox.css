@@ -1,0 +1,46 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+   
+    margin: 0px;
+}
+
+#main {
+    display: flex;
+    flex: 1;
+}
+
+#main > article {
+    flex: 1;
+    order: 1;
+}
+
+#main > nav, 
+#main > aside {
+    flex: 0 0 20vw;
+}
+
+#main > nav {
+    background-color: #d7e8d4;
+}
+
+#main > aside {
+    background-color: #84edea;
+}
+
+header, 
+footer {
+    background-color: yellowgreen;
+}
+
+header, 
+footer, 
+aside, 
+article, 
+nav {
+    padding: 1em;
+}

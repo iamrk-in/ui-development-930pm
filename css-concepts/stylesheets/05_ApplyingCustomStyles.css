@@ -1,0 +1,44 @@
+div {
+    border: 1px solid red;
+    margin: 5px 0px;
+    padding: 5px;
+}
+
+h4 {
+    background-color: rgb(185, 123, 194);
+}
+
+li {
+    /* list-style: none; */
+    text-decoration: underline;
+    text-decoration-color: #3fda6e;
+}
+
+.list_item {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #dae;
+}
+
+.list_item_style {
+    border: 5px solid #a2d;
+}
+
+p {
+    text-align: center;
+}
+
+/* class */
+.concept_class {
+    color: #5d3;
+    text-decoration: underline;
+}
+
+/* id */
+#image_item {
+    border-bottom: 5px solid #d3a;
+}
+
+#box_img {
+    border-left: 5px dotted #5de;
+    border-right: 5px dotted #cd2;
+}

@@ -13,3 +13,7 @@ li {
     text-decoration: underline;
     text-decoration-color: #3fda6e;
 }
+
+p {
+    text-align: center;
+}

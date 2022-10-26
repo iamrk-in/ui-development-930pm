@@ -30,3 +30,12 @@
     - 2 ways
     1. single - // ......
     2. multi - /* .... */
+
+-> Creating Custom Styles
+    1. Class 
+    2. Id
+
+-> Creating a Sample Blog Page
+-> FlexBox
+-> Create Form Design without Table
+-> Create Responsive Grid Layout
