@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+    
+    <link rel="stylesheet" href="customStyles.css" />
+    <style></style>
+    
+    <script src="customScripts.js"></script>
+    <script></script>
+</head>
+<body>
+    <div class="wrapper">
+        <script>
+            // decision making statements
+            // if, if else, if else if else, switch case
+
+            // let val1 = 0;
+            // if(val1 == 0) {
+            //     document.write(`the value of val1: ${val1} is true!<br />`);
+            // } else {
+            //     document.write(`the value of val1: ${val1} is false!<br />`);
+            // }
+
+            let age = 26;
+            if(age < 18) {
+                document.write(`the value of age: ${age} is lesser than 18! <br />`);
+            } else if(age >= 18 && age < 26) {
+                document.write(`the value of age: ${age} is in between 18 and 26! <br />`);
+            } else if(age >= 26 && age < 38) {
+                document.write(`the value of age: ${age} is in between 26 and 38! <br />`);
+            } else {
+                document.write(`the value of age: ${age} is greater than 38! <br />`);
+            }
+
+            let user = "john";
+            switch(user) {
+                case "peter": 
+                    document.write(`the user: ${user}! <br />`);
+                    break;
+                    
+                case "john": 
+                    document.write(`the user: ${user}! <br />`);
+                    break;
+
+                case "smith": 
+                    document.write(`the user: ${user}! <br />`);
+                    break;
+
+                case "david": 
+                    document.write(`the user: ${user}! <br />`);
+                    break;
+
+                default: 
+                    document.write(`none of the case is matching! <br />`);
+            }
+
+            // loop statements
+            // while, do while, for
+
+            let i = 6;
+            while(i < 5) {
+                document.write(`the value of i: ${i} <br />`);
+                i++;
+            }
+
+            let j = 6;
+            do {
+                document.write(`the value of j: ${j} <br />`);
+                j++;
+            } while(j < 5);
+
+            for(let k = 0; k < 5; k++) {
+                document.write(`the value of k: ${k} <br />`);
+            }
+        </script>
+    </div>
+</body>
+</html>

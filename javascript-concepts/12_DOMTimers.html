@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+    
+    <link rel="stylesheet" href="customStyles.css" />
+    <style></style>
+    
+    <script src="customScripts.js"></script>
+    <script>
+        function myBtnFunc() {
+            document.write('this is my button function!');
+        }
+
+
+        function showTime() {
+            var d = new Date();
+            document.getElementById("clock").innerHTML = d;
+        }
+        
+        setInterval(showTime, 1000);
+
+    </script>
+</head>
+<body>
+    <div class="wrapper">
+        <p id="mark"> this is a para with id 'mark' </p>
+
+        <button type="button" onclick="setTimeout(myBtnFunc, 2000)"> click btn </button>
+
+        <p id="clock"></p>
+        <script>
+
+        </script>
+    </div>
+</body>
+</html>

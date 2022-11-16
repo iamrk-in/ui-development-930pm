@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+    
+    <link rel="stylesheet" href="customStyles.css" />
+    <style></style>
+    
+    <script src="customScripts.js"></script>
+    <script></script>
+</head>
+<body>
+    <div class="wrapper">
+        <script>
+            /*
+                Operators: 
+                1. Arithmatic
+                2. Assignment
+                3. Comparison (Relational)
+                4. Conditional (Ternary)
+                5. Logical
+            */
+
+            let num1 = 3;
+            let num2 = 4;
+
+            let res = null;
+
+            document.write(`the value of num1: ${num1} <br />`);
+            document.write(`the value of num2: ${num2} <br />`);
+
+            // Arithmatic:
+            // 1. Binary: +, -, *, /, %
+            res = (num1 * num2);
+            document.write(`the res: ${res} <br />`);
+
+            // 2. Unary: ++, --
+            document.write(`the present value of num1: ${num1} <br />`);
+            num1++; // num1 = (3 + 1)
+            document.write(`the updated value of num1: ${num1} <br />`);
+
+            // Assignment: +=, -=, *=, /=, %=
+            num1 += num2; // num1 = (num1 + num2)
+            document.write(`the updated value of num1: ${num1} <br />`);
+
+            // comparison: ==, !=, ===, !==, >, <, >=, <=
+            let val1 = 4;
+            let val2 = "4";
+            let val3 = 4.0;
+
+            res = (val1 !== val3);
+            document.write(`res: ${res} <br />` );
+
+            // conditional: () ? ... : ...
+            res = ((val2 > val3) ? ("its true") : ("its false"));
+            document.write(`res: ${res} <br />` );
+
+            // logical: &&, ||, !
+            res = !((val1 >= val3) && (val2 === val1));
+            document.write(`res: ${res} <br />` );
+
+            res = ((val1 >= val3) || (val2 === val1));
+            document.write(`res: ${res} <br />` );
+        </script>
+    </div>
+</body>
+</html>

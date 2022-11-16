@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+    
+    <link rel="stylesheet" href="customStyles.css" />
+    <style></style>
+    
+    <script src="customScripts.js"></script>
+    <script>
+        function windowSize() {
+            var w = window.innerWidth;
+            var h = window.innerHeight;
+
+            console.log(`w: ${w}, h: ${h}`);
+        }
+
+        /*
+            screen
+            -----------------------------
+            screen.width, screen.height
+
+
+            location
+            -----------------------------
+            window.location.href
+            window.location.protocol
+
+            console.log(window.location.href);
+            console.log(window.location.protocol);
+            window.location.assign('http://google.com');
+
+            window.history.go(2);
+        */
+
+        if(navigator.cookieEnabled) {} else {}
+       
+    </script>
+</head>
+<body>
+    <div class="wrapper">
+        <script>
+            windowSize();
+        </script>
+    </div>
+</body>
+</html>

@@ -1,0 +1,85 @@
+-> What is Javascript?
+    - Javascript is an open source client side scripting language
+    - Write the program - loading the data dynamically, creating the basic animation, implementing the events (event handlers - click, hover, focus)
+
+-> Display the Data:
+    document.write();
+
+-> Data Types: 
+    1. Primitive Data Types
+        1. Number: 0 - 9; 23, -98, 67.56, 6e2, 5^2, 3.14, 1.7
+        2. String: a - z; A - Z; 0 - 9; all symbols; ' ... ' / " ... " / ` ... `
+        3. Boolean: true, false - 0 / 1
+
+    2. Non - Primitive Data Types
+        1. Arrays
+        2. Functions
+        3. Objects
+
+    3. Misc., 
+        1. Null 
+        2. Undefined
+
+-> Comment:
+    1. Single Line: // ..... 
+    2. Multi Line: /*
+        .....
+        .....
+    */
+    
+-> Identifiers: 
+    - to create or declare an identifier, we have some set of rules:
+        1. The starting character of an identifier should be either a - z, A - Z, _
+        2. From the Second character of an identifier, it can have either a - z, A - Z, 0 - 9, _
+        3. No Special Symbols are allowed
+        4. No Space(s) are allowed
+        5. Can have Combination of Characters - uppercase & lowercase
+
+    eg., fullname, _age, num1, full_name, fullName
+
+-> Keywords: 
+    - if, try, else, async, while, for etc., 
+
+-> Variables: 
+    - a Variable is a name which is used to hold / store the value
+    - the value can vary for n no of times
+
+    - to declare the variables: we are having 3 different ways
+        1. var
+        2. let 
+        3. const
+
+-> Operators: 
+-> Statements:
+    1. decision making 
+    2. loop 
+
+-> Arrays: 
+-> Functions: 
+    - function call and its definition
+    - function parameters
+    - return statement 
+    - anonymous 
+    - callback 
+    - arrow 
+    - nested 
+    - self-executing 
+    - getter and setter 
+    - closure
+
+- strict mode
+- dom and timers
+- date, time and math objects
+- bom
+- event listeners
+- json
+- exception handling: try, catch, throw
+- regular expressions
+- form validation
+- cookies (x)
+- es6 features
+- object declaration
+- class and object
+- promise, asyn, await
+- localstorage
+- sessionstorage

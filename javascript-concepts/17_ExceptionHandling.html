@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+    
+    <link rel="stylesheet" href="customStyles.css" />
+    <style></style>
+    
+    <script src="customScripts.js"></script>
+    <script>
+        function myFunc() {
+            let x = 4;
+            let y = 6;
+
+            let r = 0;
+
+            try {
+                if(x != 0) {
+                    r = (x / y);
+                    document.getElementById("show").innerHTML = `the r: ${r} <br />`;
+                } else {
+                    throw new Error("unable to do exp., because of x value is either 0 or negative <br />");
+                }
+            } catch(err) {
+                document.getElementById("show").innerHTML = err;
+            } finally {
+                document.getElementById("show").innerHTML += `finally, the program ends! <br />`;
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="wrapper">
+        <button type="button" onclick="myFunc()"> click me </button>
+
+        <div id="show"></div>
+        <script>
+            
+        </script>
+    </div>
+</body>
+</html>

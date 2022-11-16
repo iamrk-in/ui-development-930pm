@@ -1,0 +1,16 @@
+- what is bootstrap?
+    - bootstrap is a css framework which having group of components
+    - we can create responsive designs
+
+- fixed layout 
+- fluid layout 
+- created custom layout
+- typography
+    text-* (primary, secondary, active, default, warning, danger)
+- tables
+- lists and listgroups
+- forms and inputgroups
+- buttons and dropdowns
+- images and videos
+- cards
+

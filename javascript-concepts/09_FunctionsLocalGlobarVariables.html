@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+    
+    <link rel="stylesheet" href="customStyles.css" />
+    <style></style>
+    
+    <script src="customScripts.js"></script>
+    <script>
+        function myFirstFunc() {
+            let numl1 = 5;
+            let numl2 = 8;
+
+            let resl = (numl1 + numl2);
+
+            document.write(`the value of numl1: ${numl1} <br />`);
+            document.write(`the value of numl2: ${numl2} <br />`);
+
+            document.write(`the value of resl: ${resl} <br />`);
+            document.write(`the global var num1: ${num1} <br />`);
+        }
+
+        
+    </script>
+</head>
+<body>
+    <div class="wrapper">
+        <script>
+            let num1 = 5;
+            let num2 = 8;
+
+            let res = (num1 + num2);
+
+            document.write(`the value of num1: ${num1} <br />`);
+            document.write(`the value of num2: ${num2} <br />`);
+
+            document.write(`the value of res: ${res} <br />`);
+
+            myFirstFunc();
+        </script>
+    </div>
+</body>
+</html>

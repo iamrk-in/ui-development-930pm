@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+    
+    <link rel="stylesheet" href="customStyles.css" />
+    <style></style>
+    
+    <script src="customScripts.js"></script>
+    <script>
+        // anonymous
+        let doCheck = function(u, p) {
+            let chk = (u !== '' && p !== '');
+            if(chk) {
+                return chk;
+            } else {
+                return false;
+            }
+        }
+
+        // arrow
+        let doCheck1 = (u, p) => {
+            let chk = (u !== '' && p !== '');
+            if(chk) {
+                return chk;
+            } else {
+                return false;
+            }
+        }
+
+        function myDisp(r) {
+            document.write(r);
+        }
+
+        // calback
+        function myCalc(n1, n2, callBack) {
+            let res = (n1 + n2);
+            callBack(res);
+        }
+    </script>
+</head>
+<body>
+    <div class="wrapper">
+        <script>
+            "use strict"
+            var age = 45;
+            console.log(age);
+
+            let name = 'john';
+            let password = 'demo';
+
+            let res = null;
+
+            // anonymous
+            res = doCheck(name, password);
+            document.write(`user auth: ${res} <br />`);
+
+            // arrow
+            res = doCheck1(name, password);
+            document.write(`user auth: ${res} <br />`);
+            
+            // callback
+            let num1 = 9;
+            let num2 = 5;
+
+            myCalc(num1, num2, myDisp);
+            myCalc(num1, num2, myDisp);
+
+            /*
+                it's just a discussion about how the global variable is updating its value (it's not a concept of closure)
+
+            */
+
+            var counter = 0;
+            console.log(`before func call, displaying the counter value`);
+            console.log(counter);
+
+            // a function dedicated to manipulate the 'counter' variable
+            // calling a function
+
+            function makeCounter() {
+                return counter += 1;
+            }
+
+            makeCounter();
+            console.log(`after func call, displaying the counter value`);
+            console.log(counter);
+
+            counter = 10;
+            console.log(`after func call or updating the new value, displaying the counter value`);
+            console.log(counter);
+
+            // its something to understand the global variable is not accessed or manipulated inside the function
+
+            // declare global variable
+            var counter2 = 0;
+
+            // function def., 
+            function makeCounter2() {
+                // declare the local variable
+                var counter2 = 10;
+
+                // manipulating
+                return counter2 += 1;
+            }
+
+            console.log(`given a call to fun., 1st time`);
+            console.log(makeCounter2());
+
+            console.log(`given a call to fun., 2nd time`);
+            console.log(makeCounter2());
+
+            // nested functions
+            function makeCounter3() {
+                var counter3 = 0;
+
+                console.log(`the value of counter3: ${counter3} which is acting a a local variable in makeCounter3`);
+                
+                function make() {
+                    counter3++;
+                    return counter3;
+                }
+
+                return make;
+            }
+
+            var myCounter3 = makeCounter3();
+            console.log(`given a call to myCounter3 func.,`);
+            console.log(myCounter3());
+
+            // self executing functions (anonymous)
+            var myCounter4 = (function() {
+                var counter4 = 0;
+
+                // nested anonymous function
+                return function() {
+                    counter4++;
+                    return counter4;
+                }
+            })();
+
+            
+            console.log(`given a call to myCounter4 func.,`);
+            console.log(myCounter4());
+
+            // getter and setter functions
+            var getValue, setValue;
+
+            (function() {
+                var secret = 0;
+
+                // getter function
+                getValue = function() {
+                    return secret;
+                }
+
+                //setter function
+                setValue =  function(x) {
+                    secret = x;
+                }
+            })();
+
+            console.log(`output from getValue.,`);
+            console.log(getValue());
+
+            setValue(10);
+
+            console.log(`output from getValue., after setValue`);
+            console.log(getValue());
+        </script>
+    </div>
+</body>
+</html>

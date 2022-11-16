@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+    
+    <link rel="stylesheet" href="customStyles.css" />
+    <style></style>
+    
+    <script src="customScripts.js"></script>
+    <script></script>
+</head>
+<body>
+    <div class="wrapper">
+        <script>
+            var d = new Date();
+            document.write(`the cur date: ${d} <br />`);
+
+            d = new Date("1 Nov 2222");
+            document.write(`the cur date: ${d} <br />`);
+
+            var d = new Date();
+            document.write(`the cur date: ${d.toString()} <br />`);
+            document.write(`the cur date: ${d.getDate()} <br />`);
+
+            d.setDate(d.getDate() + 8);
+            document.write(`the cur date: ${d.toString()} <br />`);
+
+
+            document.write(`E: ${Math.E} <br />`);
+            document.write(`random(): ${Math.random()} <br />`);
+            
+        </script>
+    </div>
+</body>
+</html>

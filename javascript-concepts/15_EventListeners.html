@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+    
+    <link rel="stylesheet" href="customStyles.css" />
+    <style></style>
+    
+    <script src="customScripts.js"></script>
+    <script>
+        function firstFunc() {
+            document.getElementById("show").innerHTML = 'this is myFirstFunc';
+        }
+
+        function applyStyle() {
+            document.getElementById("show").innerHTML = 'this is hover Effect';
+        }
+
+        function sayHello() {
+            document.getElementById("show1").innerHTML = 'this is event - addEventListener';
+        }
+
+        function setHoverColor() {
+            document.getElementById("show2").innerHTML = 'hover text';
+            document.getElementById("show2").style.color = 'red';
+        }
+
+        function setNormalColor() {
+            document.getElementById("show2").innerHTML = 'normal text';
+            document.getElementById("show2").style.color = 'green';
+        }
+    </script>
+</head>
+<body>
+    <div class="wrapper">
+        <button type="button" id="myBtn"> click me </button>
+        <div id="show"></div>
+
+        <button type="button" id="myBtn1"> click me </button>
+        <div id="show1"></div>
+
+        <div id="show2"></div>
+        
+        <script>
+            var btn = document.getElementById("myBtn");
+            btn.onclick = firstFunc;
+            btn.onmouseover = applyStyle;
+
+            // addEventListener()
+            var btn1 = document.getElementById("myBtn1");
+            btn1.addEventListener("click", sayHello);
+            btn1.addEventListener("mouseover", setHoverColor);
+            btn1.addEventListener("mouseout", setNormalColor);
+        </script>
+    </div>
+</body>
+</html>
